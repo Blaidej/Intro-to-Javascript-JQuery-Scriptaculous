@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <!--helps search engines find identify your website -->
+    <META name="keywords" content="Double dating, marriage, married couples, dating, married and dating, fun, friendship, social outing, meet other, married, table 4 4, table for for, table 4 4, married couple dining, table for four, table for 4, strengthen marriage, matching married couples, similiar interests, build great friendships">
+    <!--Sets the title for the website.-->
+    <title>T4F-About Us</title>
+    <!--This meta tage sets the viewport on the screen to the width of the device. This is important for mobile devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Website favicon-->
+    <link rel="shortcut icon" href="images/favico.ico" type="image/x-icon">
+    <!--This is the website description. It may be displayed in a browser search-->
+    <meta name="description" content="This is the website description">
+    <!--This is a reference to the font used on the website. Go to Gooble Fonts and pick out your own favorits font. You will get a new "link" from Google.  See also the change you need to make in css/style.css.-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400i" rel="stylesheet">
+    <!-- This references the stylesheet for bootstrap-->
+	<!--This it the reference to jQuery. This script must load before the Bootstrap Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!--This links the style sheet for Font Awesome, for web icons. -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	
+	<!--This links the the google api for scriptaculous -->
+	<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+    <!--This links the the google api for jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Custom styles for this template. This is last of the CSS stylesheets, so it can override the Bootsrap CSS. Change the name to the name of your style sheet-->
+    <link rel="stylesheet" href="dating.css">
+	<script type="text/javascript">
+	
+	//jquery noconflict so I can use the resize function to call the Scriptaculous
+	//functions so that my webpage responses are animated.
+	$.noConflict();
+	jQuery(document).ready(function($) {
+		$(window).resize(function() {
+			if ($(window).width() < 1300) {
+				blindsUp();
+			}if ($(window).width() < 1200) {
+				dropOutPic();
+			}if ($(window).width() < 800) {
+				foldPic();
+			}if ($(window).width() < 600) {
+				switchoffPic();
+			}
+		});
+	});
+		
+	//scriptaculous functions getting called for images for animated responses
+	function blindsUp() {
+		new Effect.BlindUp('media1', { duration: 1.0 });
+		return false;
+	}
+	function dropOutPic() {
+		new Effect.DropOut('media2');
+		return false;
+	}
+	function foldPic() {
+		new Effect.Fold('media3');
+		return false;
+	}
+	function switchoffPic() {
+		new Effect.SwitchOff('media4');
+		return false;
+	}
+	</script>
+	
+  </head>
+
+  <body onload="getWidth()"; "dropPictures">
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html">
+              <img class="logo" src="images/table4fourlogo.png" alt="Table 4 Four Logo" height="50px" width="132px">
+            </a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html"class="currentpage">About Us</a></li>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="matches.html">Matches</a></li>
+              <!--Optional Dropdown menu -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="profile.html">My Profile</a></li>
+                  <!--<li><a href="#">Account Settings</a></li>-->
+                  <li><a href="helpsettings.html">Help</a></li>
+                  <!--<li><a href="#">Log Out</a></li>-->
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+		<div class="col-md-3">
+			<img src="images/couples-table-drinks.jpg" id="media1"
+			class="tomuchmedia1" class="img-rounded"
+			alt="Table with Drinks and People" height= "300" width= "auto">
+		</div>
+		<div class="col-md-3">
+			<img src="images/cafe-chalkboard-with-todays-specials.jpg" 
+			id="media2" class="tomuchmedia3" class="img-rounded"
+			alt="Restaurant chalk board with specials listed" height= "300" 
+			width= "auto">
+		</div>
+		<div class="col-md-3">
+			<img src="images/hands-friends-coffee-shop.jpg" id="media3" 
+			class="tomuchmedia2" class="img-rounded" alt="Two people out for coffee" height= "300" width= "auto">
+		</div>
+		<div class="col-md-3">
+			<img src="images/fourentrees.jpg" class="img-rounded" id="media4" 
+			alt="Top down perspective of a table of 4 eating" height= "300"
+			width= "auto">
+		</div>
+		
+      
+	  
+    </header>
+    <main>
+      <div class="container-fluid">
+		<div class="row">
+			<!-- commented out, but if user wants to try functions, they are below -->
+            <!-- <div class="col-sm-6">
+				<input type="button" value="Drop Picture" onclick="dropOutPic()">
+				<input type="button" value="Fold Picture" onclick="foldPic()">
+				<input type="button" value="Blinds Up" onclick="blindsUp()">
+				<input type="button" value="Switch Off Picture" onclick="switchoffPic()">
+			</div> -->
+	    </div>
+            <div class="row">
+               <div class="col-sm-6">
+                  <h2>About Us</h2>
+                  <dl>
+					<dd>Table4Four was created by our desire for married couples to find other, compatible, married couples 
+					to go on double dates! We are committed to helping you find other couples that can help grow and encourage
+					your own relationship through fellowship. Table4Four matches based on compatibility of interest and worldview.  <a href= "http://www.huffingtonpost.com/2012/02/27/double-dating-benefits-marriage_n_1305441.html,"
+					target="_blank"> Don't just take our word for it; check out this article from the Huffingtion Post!</a><br>
+					<br><dt><strong>How does Table4Four match married couples with other married couples?</strong></dt>
+					<br><dd>When you sign up for Table4Four you and your spouse will complete a 75 question basic questionnaire. This questionnaire will be the base that Table4Four uses to find other couples with similar interests, personalities and worldviews as you and your spouse. The answers to this questionnaire are solely used to match you and your spouse with other couples. No one will see your responses to the questionnaire. </dd><br>
+				    </dl>
+				  
+                </div>
+                <div class="col-sm-6">
+                    <h2>What's Next?</h2>
+				    <dd><p>After taking the questionnaire you and your spouse will create a profile for   other couples to view. This can be customized by you! Simply answer a few basic     questions such as: ages of spouses, years married,
+					current location along with details of what you are seeking (i.e. peer couples, couples to be mentored by or couples you could mentor). You will also be able to share more about you and your spouse so other couples
+					can get to know you and compare compatibility based off your profile.</p>
+					<p>Table4Four will continually search to find other couples that are compatible to you and your spouse. Daily, Table4Four will send you profiles of compatible couples. You will have the option to extend a message if
+					you are interested by their profile.</p></dd><br>
+					<dt><strong>How to begin creating new friendships?</strong></dt><br>
+					<dd>It’s simple! Begin meeting friends and creating new friendships for you and your spouse by clicking here
+					to sign up and create your profile!
+                </div>
+			    <div class="col-sm-6">
+                    <h2>What Scriptaculous Functions are on this page?</h2>
+				    <dl>
+						<dt><a class = "projectNotes2" href="http://madrobby.github.io/scriptaculous/effect-blindup/">BlindsUp</a></dt>
+						<dt><a class = "projectNotes2" href="http://madrobby.github.io/scriptaculous/effect-dropout/">Droppable</a></dt>
+						<dt><a class = "projectNotes2" href="http://madrobby.github.io/scriptaculous/effect-fold/">Foldable</a></dt>
+						<dt><a class = "projectNotes2" href="http://madrobby.github.io/scriptaculous/effect-switchoff/">Switch OFF</a></dt>
+					</dl>
+				    <p> When you resize the screen you will see Scriptaculous
+				    animating the images as they dissapear. You also have the option
+				    of going to the html and uncommenting buttons and trying the 
+				    functions yourself.</p>
+				</div>
+            </div>
+			<div class="col-sm-4">
+				<span class="name2"> Table4Four </span>
+				<br> 14242 Fourth Street
+				<br> St. Paul, MN 55112
+				<br> 888-444-4444
+				<br>
+				<br>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Copyright&copy;2016 Table4Four
+      <br>
+      <a href="mailto:blaidejacques@gmail.com">blaidejacques@gmail.com</a>
+    </footer>
+  
+    <!--This is the reference to the Bootstrap Javascript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

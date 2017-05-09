@@ -1,0 +1,155 @@
+
+body {
+	
+	padding-top: 50px;/*If I put a static menubar up top, they recommend having 70px of padding*/
+	margin:0;
+	background-color: #8cbfd9;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align:left;
+	
+}
+header {
+	background-color: #3399ff;
+	color: #ffffff;
+	text-align: left;
+	text-decoration:none;
+	
+	
+}
+main {font-size: 1.2em;
+		color: black;
+		background: rgba(255,255,255,0);
+		width: 100%;
+		padding:1px;
+		
+}
+
+nav a { text-decoration: none;
+		padding-right: 30px;
+		color: #3399ff;
+		
+		
+}
+nav ul {
+	list-style-type: none;
+	text-align: center;
+
+	
+}
+nav li {
+	display: inline;
+}
+nav	{
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1.7em;
+	line-height:2em;
+	font-family: 'Merriweather', serif;
+}
+input,textarea{
+	width:100%;
+}
+
+.navbar {
+	background-color: #3399ff;
+	border: #3399ff;
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color: #a6a6a6;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+	color:#999999;
+	background-color: transparent;
+}
+.central{
+	max-width:1000px;
+	margin:0 auto;
+	display:block;
+}
+
+
+.heroImage {
+	position: absolute;
+	border-bottom: 3px solid #ffffff;
+	height:auto;
+	width:100%;
+	z-index:-1;
+	
+}
+#heroBox {
+	position: relative;
+	padding:0;
+	width:1353.75;
+	height:447.81;
+	
+}
+#table4four{
+	visibility: hidden;
+	position: absolute;
+	top: 115px;
+	left: 40.5%;
+}
+#manLeft1{
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+	left: 10px;
+	top: 90px;
+	
+}
+#manRight1{
+	visibility: hidden;
+	position: absolute;
+	right: 20px;
+	top:90px;
+}
+#womanLeft1{
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+	left: 120px;
+	top: 90px;
+}
+#womanRight1{
+	visibility: hidden;
+	position: absolute;
+	right: 130px;
+	top:90px;
+}
+
+#buttonbox{
+	position: fixed;
+    bottom: 10px;
+    left: 10px;
+	height:auto;
+    width: 500px;
+    border: 3px solid #000033;
+}
+#button1{
+	position:relative;
+	font-size: 16px;
+	background-color: #0088cc;
+	border-radius: 8px;
+	width: 200px;
+}
+#button2{
+	position:relative;
+	font-size: 16px;
+	background-color: #0088cc;
+	border-radius: 8px;
+	width: 200px;
+}
+#hint{
+	font-size: 18px;
+}
+
+
